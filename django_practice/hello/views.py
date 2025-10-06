@@ -9,4 +9,4 @@ def hemant(request):
     return HttpResponse("Hello, Hemant!")
 
 def greet(request, name):
-    return HttpResponse(f"Hello, {name}!")
+    return HttpResponse(f"Hello, {name.capitalize()}!")

@@ -2,8 +2,8 @@
 
 {% block body %}
     <h1>Add a Task</h1>
-    <form>
-        <input tyoe="text" name="task">
+    <form action="{ url 'tasks:add'}" method="post">
+        <input type="text" name="task">
         <input type="submit">
     </form>
     <a href="{% url 'tasks:index' %}">View Tasks</a>

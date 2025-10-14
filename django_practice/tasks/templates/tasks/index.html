@@ -3,9 +3,10 @@
 {% block body %}
     <h1>Tasks</h1>
 
-<ul>
-    {% for task in tasks%}
+    <ul>
+        {% for task in tasks%}
             <li>{{ task }}</li>
-    {% endfor %}
-</ul>
+        {% endfor %}
+    </ul>
+    <a href="/tasks/add">Add a New Task</a>
 {% endblock %}
